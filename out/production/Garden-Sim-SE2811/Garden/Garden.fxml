@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" onKeyPressed="#onKeyPressed" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Garden.GardenController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <Pane id="theGarden" fx:id="theGarden" onKeyPressed="#onKeyPressed" prefHeight="750.0" prefWidth="700.0">
+      <children>
+         <ImageView fx:id="trackingBee" fitHeight="34.0" fitWidth="37.0" layoutX="14.0" layoutY="701.0" pickOnBounds="true" preserveRatio="true" />
+         <Label layoutX="51.0" layoutY="710.0" style="-fx-background-color: white;" text="Tracking  Bee" />
+         <ImageView fx:id="patternBee" fitHeight="34.0" fitWidth="37.0" layoutX="137.0" layoutY="702.0" pickOnBounds="true" preserveRatio="true" />
+         <Label layoutX="174.0" layoutY="710.0" style="-fx-background-color: white;" text="Pattern Bee" />
+         <ImageView fx:id="nectarFlower" fitHeight="34.0" fitWidth="37.0" layoutX="242.0" layoutY="701.0" pickOnBounds="true" preserveRatio="true" />
+         <Label layoutX="279.0" layoutY="710.0" style="-fx-background-color: white;" text="Nectar Flower (heals bees)" />
+         <ImageView fx:id="drainFlower" fitHeight="34.0" fitWidth="37.0" layoutX="426.0" layoutY="701.0" pickOnBounds="true" preserveRatio="true" />
+         <Label layoutX="463.0" layoutY="710.0" style="-fx-background-color: white;" text="Drain Flower (hurts bees)" />
+         <Label layoutX="14.0" layoutY="668.0" style="-fx-background-color: white;" text="Four random flowers are spawned in and up to four random bees are spawned in.&#10;Press or hold right arrow key to watch bees move and interact with flowers" wrapText="true" />
+      </children></Pane>
+</GridPane>
